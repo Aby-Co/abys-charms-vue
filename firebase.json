@@ -12,7 +12,9 @@
     }
   ],
   "hosting": {
+    "site": "test-aby-charms",
     "public": "dist",
+    "region": "asia-south1",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -20,10 +22,18 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "/api/order-create",
+        "function": "orderCreate"
+      },
+      {
+        "source": "/",
         "destination": "/index.html"
       }
     ]
   },
-  "extensions": {}
+  "extensions": {},
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
 }

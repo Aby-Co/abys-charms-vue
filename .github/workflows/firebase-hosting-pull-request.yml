@@ -11,7 +11,10 @@ jobs:
       - uses: actions/checkout@v3
       
       - uses: pnpm/action-setup@v2
-      - run: pnpm i && pnpm run build
+        with:
+          version: 8.5.1
+          run_install: true
+      - run: pnpm build
       
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:

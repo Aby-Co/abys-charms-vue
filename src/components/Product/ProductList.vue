@@ -1,11 +1,7 @@
 <template>
-  <p class="text-2xl text-gray-600 my-10">
-    We sell a variety of earrings, including <strong>Golden Jhumkas</strong>, Golden Earrings, and Oxidised Jhumkas.
-  </p>
-  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 mb-10">
     <Product v-for="product in products" :key="product.productId" :product="product"></Product>
   </section>
-  <button @click="more" >More</button>
 </template>
 
 <script>

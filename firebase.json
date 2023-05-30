@@ -28,6 +28,10 @@
       {
         "source": "!/api/**",
         "destination": "/index.html"
+      },
+      {
+        "source": "/about/**",
+        "destination": "/index.html"
       }
     ]
   },

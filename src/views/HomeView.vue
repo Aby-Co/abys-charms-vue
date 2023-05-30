@@ -1,44 +1,26 @@
 <template>
-  <Welcome></Welcome>
-  <div class="container mx-auto">
-    <ProductList :products="products" />
+  <Welcome class="shadow" />
+  <p class="shadow rounded text-lg text-black font-semibold mt-4 mx-4 p-6 bg-bg">
+    We sell a variety of earrings, including Golden Jhumkas, Golden Earrings, and Oxidised Jhumkas.
+  </p>
+  <div class="p-4">
+    <ProductList />
   </div>
 </template>
 
 <script>
-import Welcome from '@/components/Welcome/WelcomeComponent.vue'
+import Welcome from '@/components/Welcome/Welcome.vue'
 import ProductList from '@/components/Product/ProductList.vue'
-import { collection, getDocs } from 'firebase/firestore'
-
-import db from '@/firebase/init.js'
+import { defineComponent } from 'vue'
 
 // @ is an alias to /src
-export default ({
+export default defineComponent({
   name: 'HomeView',
-  data: function () {
-    return {
-      products: []
-    }
-  },
-  async created () {
-    this.products = await this.getProducts()
-  },
   components: {
     Welcome,
     ProductList
   },
   methods: {
-    async getProducts () {
-      const productRef = collection(db, 'products')
-
-      const products = (await getDocs(productRef))
-        .docs.map(docSnap => ({
-          productId: docSnap.id,
-          ...docSnap.data()
-        }))
-
-      return products
-    },
     async verifySignature (response) {
       // const res = await this.axios.post(`/api/verifyPayment`, response)
 

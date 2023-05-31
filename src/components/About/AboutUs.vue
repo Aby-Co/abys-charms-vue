@@ -1,5 +1,5 @@
 <template>
-  <div class="text-left">
+  <div class="text-left p-10">
     <p><strong>About Us</strong></p>
     <p>ABY &amp; CO is an online retailer of imitation earrings in India. We offer a wide variety of earrings to choose
       from, including studs, hoops, chandeliers, and more. Our earrings are made with high-quality materials and are

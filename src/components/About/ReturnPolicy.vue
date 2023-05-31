@@ -1,5 +1,10 @@
 <template>
-  <div class=""></div>
+  <div class="p-10">
+    Please note that ABY & CO does not accept returns or provide refunds for products purchased through our website or any
+    other source. We strive to provide accurate product descriptions and images to help you make an informed decision before making a
+    purchase. If you have any questions about a product, please contact our customer support team before placing your
+    order.
+  </div>
 </template>
 
 <script>

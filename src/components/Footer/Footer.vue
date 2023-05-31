@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto my-4 rounded text-bg font-bold text-center bg-primary shadow-md p-4">Copyright © {{ year }} ABY & CO.</div>
+  <div class="container mx-auto my-4 rounded text-primary font-extrabold text-center">Copyright © {{ year }} ABY & CO.</div>
 </template>
 
 <script>

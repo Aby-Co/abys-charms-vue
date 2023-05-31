@@ -1,5 +1,5 @@
 <template>
-  <div class="p-10">
+  <div class="p-10 text-xs sm:text-sm md:text-md lg:text-lg">
     <p>At ABY & CO, we store the personal information you provide to us securely and solely for the purpose of order
       processing and delivery. We do not share your personal information with any third parties, except for trusted
       service providers who assist us in delivering our products to you. We are committed to protecting your data and

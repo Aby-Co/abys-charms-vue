@@ -1,5 +1,5 @@
 <template>
-  <div id="about-view" class="bg-bg flex flex-col space-y-1 px-6 pb-10 mb-10">
+  <div id="about-view" class="bg-bg flex flex-col space-y-1 px-6 pb-10 mb-10 text-xs sm:text-sm md:text-md lg:text-lg">
     <AboutUs id="about" />
     <!-- <hr class="pt-4 mx-4 border-t-2 border-primary"> -->
     <AccordionPanel @click.prevent="selected('#privacy')" id="privacy" title="Privacy Policy">

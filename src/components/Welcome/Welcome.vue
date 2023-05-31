@@ -15,8 +15,8 @@
       </video>
     </div>
     <div class="video-content shadow-inner shadow-black absolute space-y-2 text-center py-4 px-2 mx-6 w-[35%] bg-bg opacity-40">
-        <h1 class="text-accent lg:text-5xl text-xl font-extrabold drop-shadow-lg shadow-black">Aby's Charms</h1>
-        <h3 class="text-accent font-light lg:text-2xl text-sm">Where you can find the perfect earrings to match any outfit</h3>
+        <h1 class="text-accent text-xs sm:text-sm md:text-md lg:text-lg font-extrabold drop-shadow-lg shadow-black">Aby's Charms</h1>
+        <h3 class="text-accent font-light text-xs sm:text-sm md:text-md lg:text-lg">Where you can find the perfect earrings to match any outfit</h3>
     </div>
   </section>
 </template>

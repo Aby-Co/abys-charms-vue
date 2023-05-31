@@ -2,7 +2,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-nav a.exact-active {
-  color: theme('colors.accent');
-}

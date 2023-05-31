@@ -1,7 +1,7 @@
 <style>
 .slider {
   overflow-y: hidden;
-  max-height: 1000px; /* approximate max height */
+  max-height: 100000px; /* approximate max height */
   opacity: 1;
 
   transition-property: all;

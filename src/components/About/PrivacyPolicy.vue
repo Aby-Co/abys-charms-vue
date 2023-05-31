@@ -67,7 +67,7 @@ ul {
 
 <template>
   <div class="about p-10 text-left space-y-4">
-    <div class="markdown prose w-full break-words dark:prose-invert light">
+    <div class="markdown prose w-full break-words dark:prose-invert light text-xs sm:text-sm md:text-md lg:text-lg">
       <h3>Privacy Policy:</h3>
       <p>At <strong>ABY &amp; CO</strong>, we value the privacy of our customers and are committed to protecting your personal information.
         This Privacy Policy outlines how we collect, use, store, and protect the information you provide to us when using

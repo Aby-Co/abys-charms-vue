@@ -1,11 +1,9 @@
 <template>
-  <div class="container mx-auto bg-bg pt-6 pb-14 shadow-gray-400 min-h-screen">
-    <div class="">
-      <NavBar />
-      <div class="shadow-md">
-        <router-view/>
+  <div class="container mx-auto bg-bg pt-6 shadow-gray-400 min-h-screen">
+    <NavBar />
+    <div class="shadow-md">
+      <router-view/>
       </div>
-    </div>
     <div class="container pt-4">
       <Footer></Footer>
     </div>

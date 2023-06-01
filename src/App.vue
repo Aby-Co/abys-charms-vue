@@ -1,14 +1,12 @@
 <template>
-  <div class="container mx-auto bg-bg pt-6 shadow-gray-400 min-h-screen">
-    <NavBar />
-    <div class="shadow-md">
-      <router-view/>
-    </div>
-    <div class="container pt-4">
+  <NavBar :class="{ 'shadow-xl': pos > 10 }"/>
+  <div class="container mx-auto px-2 bg-bg min-h-screen">
+    <router-view></router-view>
+    <div class="mx-auto my-2">
       <Footer></Footer>
     </div>
   </div>
-  <div @click="scrollToTop" v-if="visible" class="sticky w-full flex justify-end bottom-0 pb-3 pr-5 transition">
+  <div @click="scrollToTop" v-if="pos > 500" class="sticky w-full flex justify-end bottom-0 pb-3 pr-5 transition">
     <span class="material-icons bg-accent text-bg rounded-full p-2 z-50 cursor-pointer shadow-lg shadow-black">keyboard_arrow_up</span>
   </div>
 </template>
@@ -27,16 +25,16 @@ export default defineComponent({
     Footer
   },
   setup () {
-    const visible = ref(window.pageYOffset > 500)
+    const pos = ref(window.pageYOffset)
 
-    return { visible }
+    return { pos }
   },
   mounted () {
     const self = this
     scrollListener = addEventListener('scroll', async function () {
-      const visible = window.pageYOffset > 500
-      if (self.visible !== visible) {
-        self.visible = visible
+      const pos = window.pageYOffset
+      if (self.pos !== pos) {
+        self.pos = pos
       }
     })
   },

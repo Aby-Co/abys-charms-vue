@@ -1,5 +1,5 @@
 <template>
-  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mb-10 mx-auto">
+  <section class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 mb-10 mx-auto">
     <Product v-for="product in products" :key="product.productId" :product="product"></Product>
   </section>
 </template>

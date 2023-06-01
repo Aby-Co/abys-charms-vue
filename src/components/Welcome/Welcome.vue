@@ -1,6 +1,5 @@
 <style>
   video {
-    background-image: url(/public/image/welcome_thumb_2160p.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,9 +7,9 @@
 </style>
 
 <template>
-  <section class="w-full flex flex-col justify-center text-white py-0">
-    <div class="video-docker w-full overflow-hidden rounded-t-md shadow-sm shadow-black">
-      <video class="rounded-t-md" autoplay muted loop>
+  <section class="w-full flex flex-col justify-center text-white my-2">
+    <div class="video-docker w-full overflow-hidden rounded-md">
+      <video class="rounded-t-md w-full" autoplay muted loop :style="{ backgroundImage: `url(${require('@/assets/img/video-bg.jpg')})` }">
         <source src="https://files-accl.zohopublic.in/public/workdrive-public/download/qrw264a1666fd047449e18d4855f2c3abce68" type="video/mp4" >
       </video>
     </div>

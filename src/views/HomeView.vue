@@ -1,9 +1,9 @@
 <template>
   <Welcome />
-  <p class="shadow rounded text-xs sm:text-sm md:text-md lg:text-lg text-black font-semibold mt-4 mx-4 p-6 bg-bg">
+  <p class="shadow rounded text-xs sm:text-sm md:text-md lg:text-lg text-black font-semibold my-2 mx-auto p-6 bg-bg">
     We sell a variety of earrings, including Golden Jhumkas, Golden Earrings, and Oxidised Jhumkas.
   </p>
-  <div class="p-4">
+  <div class="mx-auto my-2">
     <ProductList />
   </div>
 </template>

@@ -5,11 +5,15 @@ nav .exact-active {
 </style>
 
 <template>
-  <nav class="h-14 rounded mb-4 text-black font-extrabold mx-8">
-    <img class="h-full p-2 align-middle float-left" src="@/assets/logo.svg" alt="logo" />
-    <div class="links text-right space-x-5 px-6 py-4">
-      <router-link to="/" class="text-inherit">Home</router-link>
-      <router-link to="/about" class="text-inherit">About</router-link>
+  <nav class="sticky top-0 w-full bg-bg rounded mb-4 text-black font-extrabold pl-10 z-40">
+    <div class="container mx-auto flex align-middle h-20">
+      <router-link class="h-full align-middle" to="/">
+        <img class="h-full py-3" src="@/assets/logo.svg" alt="logo" />
+      </router-link>
+      <div class="flex-1 px-6 flex justify-end text-center text-sm sm:text-md md:text-md lg:text-lg">
+        <router-link to="/" class="self-center px-4 text-center">Home</router-link>
+        <router-link to="/about" class="self-center px-4 text-center">About</router-link>
+      </div>
     </div>
   </nav>
 </template>

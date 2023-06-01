@@ -12,7 +12,6 @@
     }
   ],
   "hosting": {
-    "site": "test-aby-charms",
     "public": "dist",
     "region": "asia-south1",
     "ignore": [

@@ -13,6 +13,7 @@
   ],
   "hosting": {
     "public": "dist",
+    "region": "asia-south1",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -20,10 +21,22 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "/api/order-create",
+        "function": "orderCreate"
+      },
+      {
+        "source": "!/api/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/about/**",
         "destination": "/index.html"
       }
     ]
   },
-  "extensions": {}
+  "extensions": {},
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
 }

@@ -29,8 +29,8 @@
         "destination": "/index.html"
       },
       {
-        "source": "/about/**",
-        "destination": "/index.html"
+        "source": "/sitemap.sml",
+        "destination": "/sitemap.xml"
       }
     ]
   },

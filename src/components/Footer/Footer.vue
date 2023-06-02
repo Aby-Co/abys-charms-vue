@@ -2,10 +2,15 @@
 ul>li {
   margin: 0 auto;
 }
-article>ul {
+.footer>article {
+  padding: 0.25rem;
+}
+.footer>article>ul {
   margin-bottom: 14px;
+  margin-left: 0;
+  padding: 0;
   text-decoration: none;
-  list-style-type: none;
+  list-style: none;
 }
 article>h4 {
   font-weight: bold;
@@ -15,10 +20,10 @@ article>h4 {
 </style>
 
 <template>
-  <section class="container mx-auto p-12 grid grid-cols-2 md:grid-cols-3 text-left text-sm">
+  <section class="footer container mx-auto p-12 grid grid-cols-2 md:grid-cols-3 text-left text-sm">
     <article>
       <h4>Who we are</h4>
-      <ul class="list-none p-0">
+      <ul>
         <li>
           <router-link to="/about">About</router-link>
         </li>
@@ -41,7 +46,7 @@ article>h4 {
     </article>
     <article>
       <h4>Other marketplaces</h4>
-      <ul class="list-none p-0">
+      <ul>
         <li>
           <a class="flex items-center" href="https://www.meesho.com/mjzgn" target="_blank">
             Meesho&nbsp;
@@ -52,7 +57,7 @@ article>h4 {
     </article>
     <article>
       <h4>Contact Us</h4>
-      <ul class="list-none p-0">
+      <ul>
         <li>Support:&nbsp;
           <a href="mailto:sylvester@abyscharms.com">sylvester@abyscharms.com</a>
         </li>
